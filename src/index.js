@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactDom from "react-dom/client";
-// import "./index.css";
+import "./index.css";
 // import App from "./components/App";
 import StarRating from "./components/StarRating";
 
@@ -9,7 +9,7 @@ function Test() {
 
   return (
     <div>
-      <StarRating color="blue" maxRating={10} onSetRating={setMovieRating} />
+      <StarRating color="green" maxRating={10} onSetRating={setMovieRating} />
       <p>This movie was rated {movieRating} stars</p>
     </div>
   );
@@ -19,7 +19,7 @@ const root = ReactDom.createRoot(document.getElementById(`root`));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <StarRating
+    {/* <StarRating
       maxRating={5}
       message={["Terrible", "Bad", "Okay", "Good", "Amazing"]}
       defaultRating={3}
@@ -30,7 +30,7 @@ root.render(
       color="red"
       className="test"
       defaultRating={3}
-    />
+    /> */}
     <Test />
   </React.StrictMode>
 );
